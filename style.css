@@ -878,7 +878,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
 }
 
-@media screen and (orientation: landscape) and (max-width: 640px) {
+@media screen and (orientation: landscape) and (max-width: 670px) {
     .nav-bar{
         height: 55px;
     } 
@@ -891,25 +891,50 @@ input[type=number]::-webkit-outer-spin-button {
     .nav-bar .contact-icon{
         top:15px;
     }
+    #intro{
+        top:100px;
+    }
+    .header-image-index{
+        height: 200px;
+        background: url(images/header-small.jpg);
+        background-position: center;
+    }
 }
 
 @media screen and (max-width: 450px){
     .contact-body{
         height: 1130px;
     }
-
+    .nav-bar{
+        height: 55px;
+    } 
+    .nav-bar .title {
+        padding-top: 10px;
+    }
+    .nav-bar .hamburger{
+        margin-top: 30px;
+    }
+    .nav-bar .contact-icon{
+        top:15px;
+    }
+    #intro{
+        top:110px;
+    }
+    #intro p{
+        font-size: 0.8em;
+    }
+    .header-image-index{
+        height: 200px;
+        background: url(images/header-small.jpg);
+        background-position: center;
+    }
     .section-bottom .problems{
-       display: block;
-   }
-
-    .subscribe-form-container #subscribe-form{
-        height: 25%;
-        width: 80%;
-   }
-
-   #intro p{
-       font-size: 0.8em;
-   }
+        display: block;
+     }
+     .subscribe-form-container #subscribe-form{
+         height: 25%;
+         width: 80%;
+    }
 }
 
 @keyframes slideDown{
