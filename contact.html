@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/strawberry.svg">
+  <title>The very berry</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav-bar">
+      <!-- <div class="hamburger">
+        <input type="checkbox" class="checkbox" value="0">
+        <div class="lines"></div>
+        <div class="lines"></div>
+        <div class="lines"></div>
+      </div>
+
+      <div class="drop-content">
+        <ul>
+          <li class="view-all"><a href="index.html#all">View all</a></li>
+          <li class="view-cheesecake"><a href="index.html#cheesecake">Cheesecake</a></li>
+          <li class="view-slice"><a href="index.html#slice">Sliced cake</a></li>
+          <li class="view-tart"><a href="index.html#tart">Tart</a></li>
+        </ul>
+      </div> -->
+
+      <div class="title nav-bar-item">
+        <a href="index.html">The very berry</a>
+      </div>
+
+      <div class="contact-link nav-bar-item">
+        <a href="contact.html">Contact Us</a>
+        <div class="nav-overlay"></div>
+      </div>
+
+      <!-- <div class="contact-icon">
+        <img href="contact.html" src="images/envelope.png"><a href="contact.html"></a></img>
+      </div> -->
+    </nav>
+
+  </header>
+
+  <div class="contact-body">
+    <div class="contact-form-container">
+      <p class="mes">Leave us a message</p>
+      <form action="https://httpbin.org/post" method="POST" class="contact-form">
+        <div class="form-section section-top">
+          <div>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" required>
+          </div>
+          <div>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" required>
+          </div>
+          <div>
+            <label for="tel">Phone Number</label>
+            <input type="text" id="tel" name="tel" pattern="\(?[1-9]\d{2}\)?[- ]?\d{3}[- ]?\d{4}" required>
+            <input type="checkbox" value="1" id="receive-call" name="receive-call"> I would like to be phoned
+            <input type="hidden" value="0" name="receive-call" class="receive-call" required>
+          </div>
+          <div>
+            <label for="email">Email Address</label>
+            <input type="email" id="mail" name="email" required>
+          </div>
+        </div>
+
+        <div class="form-section section-mid">
+          <div>
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required>
+          </div>
+
+          <div>
+            <div id="city-cont">
+              <label for="city">City</label>
+              <input type="text" list="city" required>
+              <datalist id="city">
+                <option>Calgary</option>
+                <option>Hamilton</option>
+                <option>Montreal</option>
+                <option>Ottawa</option>
+                <option>Toronto</option>
+                <option>Quebec</option>
+                <option>Vancouver</option>
+              </datalist>
+            </div>
+
+            <div id="postal-cont">
+              <label for="postal">Postal Code</label>
+              <input type="text" id="postal" name="postal" pattern="^\w\d\w\s?\d\w\d" required>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="form-section section-bottom">
+          <div>
+            <div class="problems">
+              <input type="radio" id="question" name="problem" value="question">
+              <label for="question">Question</label>
+            </div>
+            <div class="problems">
+              <input type="radio" id="comment" name="problem" value="comment">
+              <label for="comment">Comment</label>
+            </div>
+            <div class="problems">
+              <input type="radio" id="order-problem" name="problem" value="order-problem">
+              <label for="order-number">Order Problem</label>
+              <input type="number" id="order-number" name="order-number" placeholder="Enter order no">
+            </div>
+          </div>
+
+          <div>
+            <textarea id="message" name="message" placeholder="What's on your mind?" required></textarea>
+          </div>
+          <input type="hidden" id="my-name" name="my-name" value="Minh-Hang-Nguyen">
+          <button id="submit" name="submit">Send!</button>
+        </div>
+
+        <!-- First Name
+        - Last Name
+        - Email Address
+        - Address
+        - City (use a <datalist> for autocomplete of common Canadian cities)
+        - Phone Number (must be a valid Canadian Phone Number, use regex)
+        - Postal Code (must be a valid Canadian Postal Code, use regex)
+        - Checkbox Option to be phoned ("Would you like to be phoned?")
+        - Radio Options to specify what this is about: one of "Question",
+          "Comment", or "Order Problem". If the user selects "Order Problem",
+          dynamically reveal another input box to enter the order number. In the
+          case of "Comment" or "Question" hide this input box.
+        - A large area to enter the message that they want to send
+        - A hidden input field with your name -->
+      </form>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="subscribe-form-container">
+      <h4>SUBSCRIBE FOR OUR FRESH BAKE!</h4>
+      <form id="subscribe-form" action="https://formspree.io/mgezbywr" method="POST">
+        <input type="email" name="email" id="email" placeholder="Enter your email">
+        <button id="submit-button">Subscribe!</button>
+      </form>
+    </div>
+
+    <div class="link-container">
+      <p id="title">The very berry</p>
+      <div class="links">
+        <p><a href="#">About Us</a></p>
+        <p><a href="#">Location</a></p>
+        <p><a href="#">Order Online</a></p>
+        <p><a href="contact.html">Contact Us</a></p>
+      </div>
+    </div>
+    <hr>
+    <div class="copyrights">
+      <div class="icon">Icons made by <a href="https://www.flaticon.com/authors/those-icons" title="Those Icons">Those
+          Icons</a> &amp; <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+          href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+      <div class="author">&copy; The very berry by Minh Hang Nguyen</div>
+    </div>
+  </footer>
+
+  <script src="script_contact.js"></script>
+</body>
+
+</html>
