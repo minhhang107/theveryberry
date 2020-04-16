@@ -36,7 +36,7 @@ body{
     display: none;
     position: absolute;
     padding: 0;
-    top: 80px;
+    top: 55px;
     width: 100%;
     background-color: white;
 }
@@ -91,10 +91,10 @@ body{
     width: auto;
     height: 100%;
     float: right;
-    top:0px;
+    top:-30px;
     left:0;
     border-bottom: solid 2px white;
-    z-index: 2;
+    z-index: -1;
 }
 
 .contact-link:hover .nav-overlay{
@@ -259,6 +259,10 @@ opacity: 0;
 .item .description p:first-child{
     color: #Ba4D40;
     font-weight: bold;
+}
+
+.item .description p:last-child{
+    font-style: italic;
 }
 
 footer{
@@ -636,7 +640,9 @@ input[type=number]::-webkit-outer-spin-button {
     .copyrights{
         display: block;
         padding-left: 2.5%;
+        text-align: center;
     }
+    
     .copyrights div{
         display: block;
         float: none;
