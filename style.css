@@ -780,8 +780,8 @@ input[type=number]::-webkit-outer-spin-button {
     .drop-content-inactive{
         display: none;
         opacity: 1;
-        animation-name: slideUp;
-        animation-duration: 1s;
+        /* animation-name: slideUp;
+        animation-duration: 1s; */
     }
 
     .drop-content li{
@@ -892,16 +892,6 @@ input[type=number]::-webkit-outer-spin-button {
     }
 }
 
-@keyframes slideUp{
-    from {
-        opacity: 1;
-        height: 190px;
-    }
-    to {
-        opacity: 1;
-        height: 0;
-    }
-}
 
 @keyframes load{
     from {
