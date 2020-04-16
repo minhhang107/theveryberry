@@ -76,22 +76,23 @@ body{
     float: right;
     height: 100%;
     margin: 0 10px;
-    margin-top: 30px;
 }
 
 .nav-bar .contact-link a{
+    position: relative;
     text-decoration: none;
     color: white;
     font-size: 1.5em;
     height: 100%;
-} 
+    top:30px;
+}
 
 .nav-overlay{
     position: absolute;
     width: auto;
     height: 100%;
     float: right;
-    top:-30px;
+    top:0px;
     left:0;
     border-bottom: solid 2px white;
     z-index: -1;
