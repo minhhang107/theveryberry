@@ -512,7 +512,7 @@ input[type=number]::-webkit-outer-spin-button {
     box-shadow: none;
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1280px){
     .nav-bar{
         padding: 0 2.5%;
     }
@@ -927,7 +927,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 480px){
     .contact-body{
         height: 1130px;
     }
