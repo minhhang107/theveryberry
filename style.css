@@ -401,7 +401,6 @@ hr{
     padding: 40px;;
     top: 200px;
     border-radius: 5px;
-    /* background-color: lavender; */
 }
 
 .contact-form-container p{
@@ -560,15 +559,12 @@ input[type=number]::-webkit-outer-spin-button {
     .nav-bar .title a{
         font-size: 2em;
     }
-    .nav-bar .contact-link{
-        margin-top: 23px;
-    }
+
     .nav-bar .contact-link a{
         font-size: 1em;
+        top:25px;
     }
-    .nav-bar .nav-overlay{
-        top:-22px;
-    }
+
     .contact-form-container p{
         font-size: 1.8em;
     }
@@ -578,18 +574,16 @@ input[type=number]::-webkit-outer-spin-button {
     .nav-bar{
         height: 55px;
     } 
+
     .nav-bar .title a{
         font-size: 2em;
     }
-    .nav-bar .contact-link{
-        margin-top: 23px;
-    }
+
     .nav-bar .contact-link a{
         font-size: 1em;
+        top: 25px;
     }
-    .nav-bar .nav-overlay{
-        top:-22px;
-    }
+
     .body{
         width: 95%;
         grid-template-columns: 20% 80%;
