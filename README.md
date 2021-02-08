@@ -13,7 +13,7 @@ This project is a simplified front-end online cake store.
 - Media queries
 
 ## Features
-- View a list of cake by categories
+- View a list of cakes by categories
 - Focus effect when hover over an image
 - Send a contact form
 
